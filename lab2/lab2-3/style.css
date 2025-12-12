@@ -1,0 +1,27 @@
+@font-face {
+    font-family: myWebFont;
+    src: url(ChakraPetch-Regular.ttf);
+}
+
+body {
+    width: 90%;
+    font-family: myWebFont;
+}
+
+.calender {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    gap: 2px;
+}
+
+.day {
+    font-size: 1cm;
+    text-align: center;
+}
+
+.num {
+    text-align: center;
+    border: 2px solid black;
+    padding: 40px 20px 40px 20px;
+}

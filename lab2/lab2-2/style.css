@@ -1,0 +1,30 @@
+@font-face {
+    font-family: myWebFont;
+    src: url(ChakraPetch-Regular.ttf);
+}
+
+body{
+    font-family: myWebFont;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+td.score-cell {
+    width: 300px;
+}
+
+.bar {
+    height: 28px;
+    line-height: 28px;
+    color: black;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
