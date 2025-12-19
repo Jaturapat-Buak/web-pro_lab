@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>webpro_1</title>
+</head>
+<body>
+    <form id = "myform">
+        <div id = "head">
+            <h2>User Registration</h2></h3>
+        </div>
+        <div class = "form-style">
+            <p>
+                <label for = "name">
+                    Username:
+                </label>
+                <input type = "text" id = "name" name = "name">
+            </p>
+        </div>
+        <div class = "form-style">
+            <p>
+                <label for = "email">
+                    Email:
+                </label>
+                <input type = "text" id = "email" name = "email" placeholder = "e.g. user@example.com">
+            </p>
+        </div>
+        <div class = "form-style">
+            <p>
+                <label for = "phone">
+                    Phone:
+                </label>
+                <input type = "text" id = "phone" name = "phone" placeholder = "e.g. 555-555-5555">
+            </p>
+        </div>
+        <div class = "form-style">
+            <p>
+                <label for = "pw">
+                    Password:
+                </label>
+                <input type = "password" id = "pw" name = "pw">
+            </p>
+        </div>
+        <div class = "form-style">
+            <p>
+                <label for = "cpw">
+                    Confirm Password:
+                </label>
+                <input type = "password" id = "cpw" name = "cpw">
+            </p>
+        </div>
+        <button onclick = "validate()">Register</button>
+    </form>
+</body>
+</html>
