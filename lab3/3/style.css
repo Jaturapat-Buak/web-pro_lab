@@ -1,0 +1,25 @@
+@font-face {
+    font-family: myWebFont;
+    src: url(Mali-Regular.ttf);
+}
+
+body {
+    font-family: myWebFont;
+}
+
+table {
+    background-color: rgb(224, 224, 224);
+    width: 50%;
+}
+
+thead {
+    background-color: rgb(224, 224, 224);
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    background-color: white;
+}
