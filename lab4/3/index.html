@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบบัญชีรายรับ-รายจ่าย</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>ตารางรายรับ-รายจ่าย</h1>
+    <h2>ยอดคงเหลือ</h2>
+    
+    <div id="balance">0</div>
+
+    <div class="input-group">
+        <input type="text" id="item-name" placeholder="รายการ">
+        <input type="number" id="item-amount" placeholder="จำนวน" min="0">
+        <select id="item-type">
+            <option value="expense">รายจ่าย</option>
+            <option value="income">รายรับ</option>       
+        </select>
+        <input type="date" id="item-date">
+        <button id="add-btn">เพิ่มรายการ</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>วันที่</th>
+                <th>รายการ</th>
+                <th>รายรับ</th>
+                <th>รายจ่าย</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
