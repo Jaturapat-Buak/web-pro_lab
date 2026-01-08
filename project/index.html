@@ -4,115 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src = "script.js"></script>
-    <title>9CIPE</title>
+    <script src="script.js" defer></script>
+    <title>รวมสูตรอาหาร</title>
 </head>
 <body>
-    <img src = "pic/9_holder.png" style = "margin-left: 45%; width: 10%; height: auto;">
+    <div id = "headsec">
+        <h1>รวมสูตรอาหาร</h1>
+    </div>
     <div id = "recipe">
-        <div class = "card">
-            <img src = "pic/tom_yum.jpg">
-            <p>
-                ต้มยำ
-            </p>
+        <div class="card" data-id="tomyum">
+            <p>ต้มยำ</p>
+            <img src="pic/tom_yum.jpg">
         </div>
-        <div class = "card">
-            <img src = "pic/rotee.jpg">
-            <p>
-                ต้มยำ
-            </p>
+
+        <div class="card" data-id="rotee">
+            <p>โรตี</p>
+            <img src="pic/rotee.jpg">
         </div>
-        <div class = "card">
-            <img src = "pic/tom_yum.jpg">
-            <p>
-                ต้มยำ
-            </p>
-        </div>
-        <div class = "card">
-            <img src = "pic/tom_yum.jpg">
-            <p>
-                ต้มยำ
-            </p>
-        </div>
-        <div class = "card">
-            <img src = "pic/tom_yum.jpg">
-            <p>
-                ต้มยำ
-            </p>
-        </div>
-        <div class = "card">
-            <img src = "pic/tom_yum.jpg">
-            <p>
-                ต้มยำ
-            </p>
-        </div>
-        <div class = "card">
-            <img src = "pic/tom_yum.jpg">
-            <p>
-                ต้มยำ
-            </p>
-        </div>
-        <div class = "card">
-            <img src = "pic/tom_yum.jpg">
-            <p>
-                ต้มยำ
-            </p>
-        </div>
-        <div class = "card">
-            <img src = "pic/tom_yum.jpg">
-            <p>
-                ต้มยำ
-            </p>
-        </div>
-        <div class = "card">
-            <img src = "pic/tom_yum.jpg">
-            <p>
-                ต้มยำ
-            </p>
-        </div>
-        <div class = "card">
-            <img src = "pic/tom_yum.jpg">
-            <p>
-                ต้มยำ
-            </p>
-        </div>
-        <div class = "card">
-            <img src = "pic/tom_yum.jpg">
-            <p>
-                ต้มยำ
-            </p>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="close" aria-label="close">&times;</button>
+            <img id="popup-img" src="" alt="">
+            <h2 id="popup-title"></h2>
+            <pre id="popup-text"></pre>
+            <a id="popup-source" href="#" target="_blank" rel="noopener">แหล่งอ้างอิง</a>
         </div>
     </div>
 </body>
 </html>
-
-<style>
-    #recipe {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 10fr));
-        gap: 2rem;
-        max-width: 1200px;
-        margin: auto;
-        padding: 20px;
-    }
-    .card {
-        background: rgb(255, 255, 255);
-        padding: 20px;
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-        text-align: center;
-    }
-    .card:hover {
-        background: rgb(255, 238, 0);
-        color: rgb(0, 0, 0);
-        padding: 10px;
-        transition: 1s;
-    }
-    .card img {
-        width: 200px;
-        height: 200px;
-        box-shadow: 0 10px 10px rgba(0,0,0,0.4);
-        border-radius: 12px;
-        margin-bottom: 1rem;
-    }
-</style>
