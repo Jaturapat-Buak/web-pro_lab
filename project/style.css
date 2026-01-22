@@ -99,7 +99,7 @@
 }
 
 #popup-text {
-  white-space: pre-wrap; /* ✅ เก็บบรรทัด */
+  white-space: pre-wrap;
   line-height: 1.7;
   background: #f6f6f6;
   padding: 12px;

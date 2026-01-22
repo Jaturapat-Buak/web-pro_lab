@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(158, 191, 191);
+}
+
+.wrap {
+    place-items: center;
+}
+.card {
+    border: 1px solid white;
+    background-color: white;
+    width: 20cm;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px #1111;
+}
+
+.hint {
+  margin: 12px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.delBtn {
+  background: #ef4444;
+  padding: 8px 12px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #1f6feb;
+  color: white;
+  font-weight: 600;
+}

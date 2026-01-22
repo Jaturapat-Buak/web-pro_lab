@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>รายการภาพยนตร์/ซีรีส์โปรด</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h2>📋 รายการภาพยนตร์/ซีรีส์โปรด</h2>
+
+      <div class="form">
+        <input id="titleInput" type="text" placeholder="ชื่อภาพยนตร์/ซีรีส์..." />
+        <button id="addBtn" type="button">+ เพิ่ม</button>
+        <button id="clearBtn" type="button" class="danger">ลบทั้งหมด</button>
+      </div>
+
+      <p id="hint" class="hint">ยังไม่มีรายการ</p>
+
+      <ul id="list" class="list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
