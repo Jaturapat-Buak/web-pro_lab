@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>แกงส้ม</title>
+    <link rel="stylesheet" href="/css/recipe.css">
+</head>
+<body>
+
+    <div class="recipe-container">
+
+        <!-- ชื่อเมนู -->
+        <h1>แกงส้ม</h1>
+
+        <div class="recipe-content">
+
+            <!-- รูปอาหาร -->
+            <div class="recipe-image">
+                <img src="image/kaengsom.webp" alt="kaengsom">
+            </div>
+
+            <!-- รายละเอียด -->
+            <div class="recipe-info">
+
+                <h2>Ingredients (วัตถุดิบ)</h2>
+                <ul>
+                    <li>พริกแกงส้ม 2 ช้อนโต๊ะ</li>
+                    <li>กุ้งสด 200 กรัม</li>
+                    <li>ผักรวม (ถั่วฝักยาว / แครอท / กะหล่ำ) 200 กรัม</li>
+                    <li>น้ำเปล่า 3 ถ้วย</li>
+                    <li>น้ำมะขามเปียก 3 ช้อนโต๊ะ</li>
+                    <li>น้ำปลา 2 ช้อนโต๊ะ</li>
+                    <li>น้ำตาลปี๊บ 1 ช้อนโต๊ะ</li>
+                </ul>
+
+                <h2>Steps (วิธีทำ)</h2>
+                <ol>
+                    <li>ต้มน้ำให้เดือด แล้วใส่พริกแกงส้มลงไปคนให้ละลาย</li>
+                    <li>ใส่กุ้งสดลงไป ต้มจนกุ้งเริ่มสุก</li>
+                    <li>ใส่ผักที่เตรียมไว้ ต้มจนผักสุก</li>
+                    <li>ปรุงรสด้วยน้ำมะขามเปียก น้ำปลา และน้ำตาลปี๊บ</li>
+                    <li>ชิมรสให้เปรี้ยว เค็ม หวานตามชอบ แล้วปิดไฟ</li>
+                </ol>
+
+                <h2>Nutrition Facts (โภชนาการ)</h2>
+                <ul>
+                    <li>Calories: 180 kcal</li>
+                    <li>Protein: 20 g</li>
+                    <li>Carbohydrates: 15 g</li>
+                    <li>Fat: 4 g</li>
+                </ul>
+
+                <a href="/" class="back-btn">← Back to home</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.recipe-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.recipe-content {
+    display: flex;
+    gap: 30px;
+}
+
+/* รูป */
+.recipe-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ข้อมูล */
+.recipe-info h2 {
+    margin-top: 15px;
+    color: #333;
+}
+
+.recipe-info ul,
+.recipe-info ol {
+    margin-left: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+}
+</style>

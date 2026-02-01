@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>86-WIKI</title>
+</head>
+<body>
+    <div id = "nav-field">
+        <div id = "navbar">
+            <a href = "home.html" class = "nav">HOME</a>
+            <a href = "character.html" class = "nav">CHARACTER</a>
+            <a href = "story.html" class = "nav">STORY</a>
+            <a href = "credit.html" class = "nav">CREDIT</a>
+            <a href = "kaie.html" class = "nav">Kirschblüte</a>
+        </div>
+    </div>
+    <div id = "field">
+        <h1 style="font-weight: lighter;">HOME</h1>
+        <h1 style="border-left: 10px solid white; border-bottom: 5px solid white; padding-left: 10px;">Welcome to Fanmade 86 Wiki!</h1>
+        <div id = "content">
+            <img src = "image/Eighty-Six_anime_logo.png" id = "logo">
+            <div id = "text">
+                <div id = "intro">
+                    <h1>Introduction</h1>
+                    <p>86―Eighty-Six― (86―エイティシックス― Eiti Shikkusu) is a Japanese science fiction light novel series written by Asato Asato and illustrated by Shirabii. It began publication by ASCII Media Works 
+                    under their Dengeki Bunko imprint in February 2017. The series is licensed in North America by Yen Press.</p>
+                </div>
+                <div id = "syn">
+                    <h1>Synopsis</h1>
+                    <p>A War Without Casualties The Republic of San Magnolia has long been under attack from the neighboring Giadian Empire's army of unmanned drones known as the Legion. After years of painstaking research, 
+                    the Republic finally developed autonomous drones of their own, turning the one-sided struggle into a war without casualties-or at least, that's what the government claims. In truth, there is no such thing as 
+                    a bloodless war. Beyond the fortified walls protecting the eighty-five Republic territories lies the "nonexistent" Eighty-Sixth Sector. The young men and women of this forsaken land are branded the Eighty-Six 
+                    and, stripped of their humanity, pilot the "unmanned" weapons into battle...</p>
+                </div>
+            </div>
+        </div>
+        <div id = "content2">
+            <img src = "image/pic1.webp" id = "bigpic">
+            <p>This Fanmade Wiki is made by <br> Jaturapat Kitimaphokin</p>
+            <p>For submission in lab7 of <br> Fundamental Web Programming</p>
+            <p>Thank you!</p>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<style>
+    body {
+        background-color: #4d58ff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #field {
+        position: relative;
+        color: white;
+        border: 2px solid black;
+        background-color: black;
+        padding: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+        border-radius: 10px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #nav-field {
+        position: absolute;
+        top: 0;
+        left: 27%;
+        transform: translateX(-110%);
+        padding-top: 20px;
+    }
+
+    #content {
+        display: flex;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    #logo {
+        width: 200px;
+        object-fit: contain;
+    }
+
+    #text {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    #field {
+        color: white;
+        border: 2px solid black;
+        background-color: black;
+        padding: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+        border-radius: 10px;
+    }
+
+    #intro, #syn {
+        border-left: 10px solid white;
+        border-left-style: dashed;
+        border-bottom: 5px solid white;
+        padding: 20px;
+        padding-top: 2px;
+    }
+
+    #content2 {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        margin-top: 30px;
+        padding: 20px;
+        border-top: 5px solid white;
+    }
+
+    #bigpic {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+
+    #content2 p {
+        margin: 5px 0;
+        line-height: 1.5;
+    }
+
+    .nav {
+        color: white;
+        background-color: black;
+        border: 2px solid black;
+        padding: 10px 15px;
+        text-decoration: none;
+        width: 140px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav:hover {
+        color: black;
+        background-color: white;
+        border: 2px solid white;
+    }
+</style>

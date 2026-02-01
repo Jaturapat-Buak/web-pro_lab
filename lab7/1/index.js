@@ -1,0 +1,30 @@
+const express = require("express");
+const app = express();
+const port = 3000;
+
+const path = require("path");
+app.use(express.static("public"));
+
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/home.html"));
+});
+
+app.get("/character", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/character.html"));
+});
+
+app.get("/credit", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/credit.html"));
+});
+
+app.get("/story", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/story.html"));
+});
+
+app.get("/kaie", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/kaie.html"));
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}, press Ctrl-C terminate....`);
+});

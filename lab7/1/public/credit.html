@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>86-WIKI</title>
+</head>
+<body>
+    <div id = "nav-field">
+        <div id = "navbar">
+            <a href = "home.html" class = "nav">HOME</a>
+            <a href = "character.html" class = "nav">CHARACTER</a>
+            <a href = "story.html" class = "nav">STORY</a>
+            <a href = "credit.html" class = "nav">CREDIT</a>
+            <a href = "kaie.html" class = "nav">Kirschblüte</a>
+        </div>
+    </div>
+    <div id = "field">
+        <h1 style="font-weight: lighter;">CREDIT</h1>
+        <div id = "content">
+            <div id = "text">
+                <div id = "intro">
+                    <h1>Author</h1>
+                    <img src = "image/author/asato.jpg" id = "logo" style="width: 150px;">
+                    <p>Asato Asato (安里 アサトあさと あさと), also known as Asakura Toru, is a Japanese novelist most remarkable for her light novel series 86 EIGHTY-SIX published by ASCII Media Works under their Dengeki Bunko imprint.</p>
+                </div>
+                <div id = "syn">
+                    <h1>Career</h1>
+                    <p>Asato started writing novels very early when she was still in middle school. Initially, she competed in the Kadokawa Beans Bunko Newcomer Awards, a light novel publishing label aimed towards girls. However, 
+                        in 2014, she was able to reach the third round of the 21st Dengeki Novel Prize in the short-stories divison, and received encouragement from the Dengeki Bunko publishing house to write a work that would be 
+                        distinctive and unique to the Dengeki Bunko imprint. As a product, she composed her first feature-length light novel "86 EIGHTY-SIX", inspired by real-life drone warfare and sci-fi horror stories.
+                        In 2016, she won the Grand Prize for her submission "86 EIGHTY-SIX" in the 23rd Dengeki Novel Prize. The novel, featuring illustrations by Shirabii, officially started publication in the Dengeki Bunko imprint of ASCII Media Works 
+                        (Kadokawa) shortly after in the subsequent year. In 2018, she won the first place in the This Light Novel is Amazing! New Works category, simultaneously also winning the second place in the Bunkobon category.</p>
+                        <img src = "image/author/amw_005L.jpg" id = "logo" style="width: 80%; text-align: center;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<style>
+    body {
+        background-color: #4d58ff;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #field {
+        position: relative;
+        color: white;
+        border: 2px solid black;
+        background-color: black;
+        padding: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+        border-radius: 10px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #nav-field {
+        position: absolute;
+        top: 0;
+        left: 27%;
+        transform: translateX(-110%);
+        padding-top: 20px;
+    }
+
+    #content {
+        display: flex;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    
+    #text {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    #field {
+        color: white;
+        border: 2px solid black;
+        background-color: black;
+        padding: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+        border-radius: 10px;
+    }
+
+    #intro {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: stretch;
+
+        border-left: 10px dashed white;
+        border-bottom: 5px solid white;
+        padding: 20px;
+        padding-top: 2px;
+    }
+
+    #intro h1 {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    #intro img {
+        width: 30%;
+        object-fit: cover;
+        align-self: stretch;
+    }
+
+    #intro p {
+        margin: 0;
+        line-height: 1.6;
+        flex: 1;
+    }
+
+    #syn {
+        border-left: 10px solid white;
+        border-left-style: dashed;
+        border-bottom: 5px solid white;
+        padding: 20px;
+        padding-top: 2px;
+    }
+
+    #syn img {
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    .nav {
+        color: white;
+        background-color: black;
+        border: 2px solid black;
+        padding: 10px 15px;
+        text-decoration: none;
+        width: 140px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav:hover {
+        color: black;
+        background-color: white;
+        border: 2px solid white;
+    }
+</style>
