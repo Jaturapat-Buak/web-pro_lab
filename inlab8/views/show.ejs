@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show table</title>
+</head>
+
+<body>
+    <!-- สร้างตารางสำหรับแสดงข้อมูล -->
+    <!-- EJS Syntax -->
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Dept. Name</th>
+            <th>Salary</th>
+        </tr>
+        
+        <% data.forEach((item)=>{ %>
+        <tr>
+            <td><%= item.id %></td>
+            <td><%= item.name %></td>
+            <td><%= item.dept_name %></td>
+            <td><%= item.salary %></td>
+        </tr>
+        <% }) %>
+    </table>
+</body>
+</html>
