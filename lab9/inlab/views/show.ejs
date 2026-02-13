@@ -1,0 +1,17 @@
+<%- include("head") %>
+
+<body>
+    <!-- สร้างตารางสำหรับแสดงข้อมูล -->
+    <div class = "container">
+        <!-- heaher -->
+        <%- include("header") %>
+        <!-- Content -->
+        <% data.forEach((item)=>{ %>
+ 
+        <%=item.EmployeeId%> <%=item.FirstName%> <%=item.LastName%> <a href = "/delete/<%=item.EmployeeId%>">Delete</a> <br>
+
+    <% }); %>
+        <!-- footer -->
+        <%- include("footer") %>
+     </div>
+</body>
