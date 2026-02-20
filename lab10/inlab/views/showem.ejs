@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Panda Company</h1>
+    <div id = "container">
+        <% data.forEach((item)=>{ %>
+        <div class = card>
+            <img src="http://webdev.it.kmitl.ac.th:4000/emp-images/<%= item.EmployeeID %>.png" alt="<%= item.FirstName %>"width="500"><br>
+            <%=item.FirstName%> <%=item.LastName%>
+        </div>
+        <% }); %> 
+    </div>  
+</body>
+</html>
+
+<style>
+    body {
+        background-color: grey;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #container {
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        gap: 2px;
+    }
+
+    .card {
+        border: 2px solid white;
+        background-color: white;
+        text-align: center;
+        border-radius: 10px;
+        margin: auto;
+    }
+</style>
