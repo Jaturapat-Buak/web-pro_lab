@@ -4,7 +4,7 @@ const conn = mysql.createConnection({
     host: "webdev.it.kmitl.ac.th",
     user: "s67070017",
     password: "OKG89TCI87I", 
-    database: "s67070017"
+    database: "Lab8"
 });
 
 // open the MySQL connection

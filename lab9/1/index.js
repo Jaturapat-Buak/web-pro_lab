@@ -14,9 +14,6 @@ let db = new sqlite3.Database("userdata.db", (err) => {
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-// -----------------------------
-// USERS LIST
-// -----------------------------
 app.get("/", (req, res) => {
   db.all("SELECT * FROM users", (err, rows) => {
     if (err) return console.log(err.message);
@@ -24,9 +21,6 @@ app.get("/", (req, res) => {
   });
 });
 
-// -----------------------------
-// USER DETAIL (มี id)
-// -----------------------------
 app.get("/detail/:id", (req, res) => {
   const id = req.params.id;
 
